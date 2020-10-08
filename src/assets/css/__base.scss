@@ -1,0 +1,91 @@
+//Media Screens
+$bp-overLarge: 1440px;
+$bp-large: 1200px;//75em; //1200px
+$bp-smallLarge: 1100px;//68.75em; //1100px
+$bp-bigMedium: 1024px;//64em; //1024px
+$bp-smallMedium: 992px;//60em; //992px
+$bp-tablet: 768px;//45em; //768px
+$bp-smallTablet: 767px;
+$bp-bigPhone: 680px;//44em; //680px
+$bp-mediumPhone: 436px;//27em;//436px
+$bp-smallPhone: 380px;//23.75em;//380px
+$bp-smallMediumPhone: 360px;//22.5em; //360px
+$bp-smallestPhone: 320px;//20em; //320px
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+$primary-font: 'Baskervville', Georgia, 'Times New Roman', serif;
+$header-font: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%; //default font-size = 16px; 16px/16px; 1rem is 16px;
+}
+
+body {
+    font-family: $primary-font;
+    vertical-align: baseline;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+    line-height: 1.6;
+}
+
+article, 
+aside, 
+details, 
+figcaption, 
+figure, 
+footer, 
+header, 
+hgroup, 
+main, 
+menu, 
+nav, 
+section, 
+summary,
+input {
+    display: block;
+    width: 100%;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.container {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    &-padding {
+        padding: 0 5rem;
+    }
+}
+
+.app-flex {
+    display: flex;
+}
+
+.justify-b {
+    justify-content: space-between;
+    align-items: center;
+}

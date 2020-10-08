@@ -1,0 +1,147 @@
+.nav_button {
+    position: relative;
+    background-color: $complimentary-color__rgb;
+    padding: .7rem 1.5rem;
+    border-radius: 20px;
+}
+
+.form {
+
+    &-grouped {
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.2rem;
+    }
+
+    &-col-half {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 1.2rem;
+
+        & label {
+            text-align: left;
+            display: block;
+            font-family: $header-font;
+            font-size: 15px;
+            margin-bottom: .5rem;
+        }
+    }
+
+    &-col-full {
+        width: 100%;
+        max-width: 100%;
+
+        & label {
+            text-align: left;
+            display: block;
+            font-family: $header-font;
+            font-size: 15px;
+            margin-bottom: .5rem;
+        }
+    }
+
+    &-field {
+        font-size: 14px;
+        font-family: $primary-font;
+        background-color: #FAFBFC;
+        border: 2px solid #DFE1E6;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        border-radius: 3px;
+        padding: 0 1rem;
+        height: 44px;
+        transform: translateZ(0);
+        -webkit-transition: all .15s ease-in-out 0s;
+        transition: all .15s ease-in-out 0s;
+        will-change: transform, transition;
+
+        &:focus {
+            transition: all .15s ease-in-out;
+            background: white;
+            border: 2px solid $complimentary-color__hex;
+        }
+    }
+}
+
+.button {
+    position: relative;
+    background-color: $complimentary-color__rgb;
+    border-radius: 5px;
+    outline: none;
+    border: 0;
+    padding: 1rem 1.2rem;
+    cursor: pointer;
+    font-family: $header-font;
+    font-size: 1rem;
+}
+
+.upgrade-button {
+    position: relative;
+    background-color: $accent-color__rgb;
+    border-radius: 5px;
+    outline: none;
+    border: 0;
+    padding: .6rem .9rem;
+    cursor: pointer;
+    font-family: $header-font;
+    font-size: .85rem;
+}
+
+.default-button {
+    position: relative;
+    background-color: #fff;
+    border-radius: 5px;
+    outline: none;
+    border: 0;
+    padding: .6rem .9rem;
+    cursor: pointer;
+    font-family: $header-font;
+    font-size: .85rem;
+    box-shadow: 0 1px 4px 0 rgba(21,27,38,.08);
+    text-decoration: none;
+    color: inherit;
+}
+
+.delete-button {
+    position: relative;
+    background-color: #fff;
+    border-radius: 5px;
+    outline: none;
+    border: 0;
+    padding: .6rem .9rem;
+    cursor: pointer;
+    font-family: $header-font;
+    font-size: .85rem;
+    border: 1px solid rgba($color: #cb2431, $alpha: 1);
+    transition: all .3s ease-in-out;
+    transform: translateZ(0);
+    will-change: transform;
+    overflow: hidden;
+    white-space: nowrap;
+    color: $primary-color__hex;
+}
+
+.delete-button:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100%);
+    transform: translate3d(0,100%,0);
+    color: #fff;
+    background-color: rgba($color: #cb2431, $alpha: 1);
+    transition: transform .3s ease-in-out;
+    z-index: -1;
+    will-change: transform, opacity;
+}
+
+.delete-button:hover:before{
+    transform: translate3d(0, 0, 0);
+}
+
+.delete-button:hover {
+    color: #fff;
+}

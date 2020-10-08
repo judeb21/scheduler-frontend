@@ -1,0 +1,612 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Baskervville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  font-family: "Baskervville", Georgia, "Times New Roman", serif;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  line-height: 1.6;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary,
+input {
+  display: block;
+  width: 100%;
+}
+
+.container {
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container-padding {
+  padding: 0 5rem;
+}
+
+.app-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.justify-b {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 16px;
+  font-family: "Baskervville", Georgia, "Times New Roman", serif;
+}
+
+/*Black Coffee*/
+/*Majorelle Blue*/
+/*Royal Blue Light*/
+/*Light Steel Blue*/
+.nav-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3rem 0;
+}
+
+.nav-wrapper__logo {
+  max-width: 30%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+}
+
+.nav-wrapper__logo a {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav-wrapper__nav {
+  max-width: 70%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 70%;
+          flex: 0 0 70%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-wrapper__nav-desktop {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.nav-wrapper__nav-desktop_list {
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+.nav-wrapper__nav-desktop_list a {
+  color: inherit;
+  text-decoration: none;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.signup-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+  margin-bottom: 40px;
+}
+
+.signup-form {
+  max-width: 500px;
+  margin: 1.5rem auto;
+  position: relative;
+  border-radius: 3px;
+  padding: 25px 60px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px;
+  -webkit-transition: .5s all ease-in-out;
+  transition: .5s all ease-in-out;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transfrom, transition;
+}
+
+.signup-form:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 0 10px;
+          box-shadow: rgba(0, 0, 0, 0.2) 0 0 10px;
+}
+
+.signup-form__img {
+  margin: 2rem auto;
+}
+
+.signup-form__img a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.signup-form__img a h2 {
+  font-size: 1.6rem;
+}
+
+.signup-form__header {
+  margin-bottom: 2rem;
+}
+
+.signup-form__header h2 {
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+
+.signup-form__header p {
+  font-size: 13px;
+}
+
+.signup-form__header p a {
+  color: #009FFD;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  text-decoration: none;
+  line-height: 1.6;
+}
+
+.signup-form form {
+  margin-bottom: 2rem;
+}
+
+.signup-form__link {
+  margin-bottom: 2rem;
+}
+
+.signup-form__link p {
+  position: relative;
+}
+
+.signup-form__link p a {
+  color: #009FFD;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  text-decoration: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.dashboard-padding {
+  padding: 3rem 4rem;
+}
+
+.side-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 25%;
+  width: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  position: relative;
+}
+
+.side-menu__nav {
+  max-width: 20%;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  padding: 0 .5rem;
+}
+
+.side-menu__nav--list ul {
+  list-style-type: none;
+}
+
+.side-menu__nav--list ul li {
+  margin-top: 1.2rem;
+}
+
+.side-menu__nav--list ul li:last-child {
+  margin: 3rem 0 2rem 0;
+}
+
+.side-menu__nav--list ul li a {
+  color: inherit;
+  text-decoration: none;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  will-change: transform;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  position: relative;
+}
+
+.side-menu__nav--list ul li a:hover {
+  color: #009FFD;
+}
+
+.side-menu__nav--help {
+  position: absolute;
+  top: 80%;
+  display: block;
+  width: 100%;
+}
+
+.side-menu__nav--help ul {
+  list-style-type: none;
+}
+
+.side-menu__nav--help ul a {
+  color: inherit;
+  text-decoration: none;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  will-change: transform;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  position: relative;
+  font-size: 14px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.side-menu__nav--help ul a svg {
+  margin-right: .3rem;
+  position: relative;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+
+.side-menu__nav--help ul a:hover #svg-help {
+  fill: #FFA400;
+}
+
+.side-menu__nav--help ul a:hover .help-tool {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translate3d(0, -32px, 0);
+          transform: translate3d(0, -32px, 0);
+}
+
+.body-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.account--card {
+  -webkit-box-shadow: 0 1px 4px 0 rgba(21, 27, 38, 0.08);
+          box-shadow: 0 1px 4px 0 rgba(21, 27, 38, 0.08);
+  padding: 1.2rem 1.5rem;
+  max-width: 850px;
+  width: 100%;
+  background-color: #f6f8f9;
+}
+
+.account--card__panel {
+  position: relative;
+  padding: 1rem;
+}
+
+.account--card__panel-header {
+  margin-bottom: 1.4rem;
+}
+
+.account--card__panel-header h2 {
+  font-size: 1.4rem;
+}
+
+.account--card__panel-sub {
+  margin: 2rem 0 1.2rem 0;
+}
+
+.account--card__panel-sub p {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 14px;
+  color: #6f7782;
+  margin-bottom: 1rem;
+}
+
+.account--card__panel-sub:not(:first-child) {
+  margin-top: 10%;
+}
+
+.account--card__panel-content {
+  border-top: 2px solid rgba(111, 119, 130, 0.4);
+  position: relative;
+  padding: 1rem 0;
+  border-bottom: 2px solid rgba(111, 119, 130, 0.4);
+}
+
+.account--card__panel-content span {
+  display: block;
+}
+
+.account--card__panel-content span:nth-child(1) {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: .9rem;
+}
+
+.account--card__panel-content span:last-child {
+  font-family: "Baskervville", Georgia, "Times New Roman", serif;
+}
+
+.border-none {
+  border-top: none;
+}
+
+.error {
+  color: #cb2431;
+}
+
+.error-border {
+  border-top: 2px solid #cb2431;
+  border-bottom: 2px solid #cb2431;
+}
+
+.error p {
+  color: #cb2431;
+}
+
+.help-tool {
+  -webkit-box-shadow: 0 1px 4px 0 rgba(21, 27, 38, 0.08);
+          box-shadow: 0 1px 4px 0 rgba(21, 27, 38, 0.08);
+  padding: .8rem 1rem;
+  -webkit-transform: translate3d(0, 15px, 0);
+          transform: translate3d(0, 15px, 0);
+  opacity: 0;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  margin-bottom: 20px;
+  will-change: opacity, transform;
+  visibility: hidden;
+  position: absolute;
+  display: block;
+  width: 400%;
+  background-color: #f6f8f9;
+  z-index: 1;
+}
+
+.help-tool p {
+  font-size: 14px;
+}
+
+.nav_button {
+  position: relative;
+  background-color: #009ffd;
+  padding: .7rem 1.5rem;
+  border-radius: 20px;
+}
+
+.form-grouped {
+  max-width: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 1.2rem;
+}
+
+.form-col-half {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1.2rem;
+}
+
+.form-col-half label {
+  text-align: left;
+  display: block;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 15px;
+  margin-bottom: .5rem;
+}
+
+.form-col-full {
+  width: 100%;
+  max-width: 100%;
+}
+
+.form-col-full label {
+  text-align: left;
+  display: block;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 15px;
+  margin-bottom: .5rem;
+}
+
+.form-field {
+  font-size: 14px;
+  font-family: "Baskervville", Georgia, "Times New Roman", serif;
+  background-color: #FAFBFC;
+  border: 2px solid #DFE1E6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+  padding: 0 1rem;
+  height: 44px;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-transition: all .15s ease-in-out 0s;
+  transition: all .15s ease-in-out 0s;
+  will-change: transform, transition;
+}
+
+.form-field:focus {
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  background: white;
+  border: 2px solid #009FFD;
+}
+
+.button {
+  position: relative;
+  background-color: #009ffd;
+  border-radius: 5px;
+  outline: none;
+  border: 0;
+  padding: 1rem 1.2rem;
+  cursor: pointer;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 1rem;
+}
+
+.upgrade-button {
+  position: relative;
+  background-color: #ffa400;
+  border-radius: 5px;
+  outline: none;
+  border: 0;
+  padding: .6rem .9rem;
+  cursor: pointer;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: .85rem;
+}
+
+.default-button {
+  position: relative;
+  background-color: #fff;
+  border-radius: 5px;
+  outline: none;
+  border: 0;
+  padding: .6rem .9rem;
+  cursor: pointer;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: .85rem;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(21, 27, 38, 0.08);
+          box-shadow: 0 1px 4px 0 rgba(21, 27, 38, 0.08);
+}
+
+.delete-button {
+  position: relative;
+  background-color: #fff;
+  border-radius: 5px;
+  outline: none;
+  border: 0;
+  padding: .6rem .9rem;
+  cursor: pointer;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: .85rem;
+  border: 1px solid #cb2431;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #232528;
+}
+
+.delete-button:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100%);
+  -webkit-transform: translate3d(0, 100%, 0);
+          transform: translate3d(0, 100%, 0);
+  color: #fff;
+  background-color: #cb2431;
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+  z-index: -1;
+  will-change: transform, opacity;
+}
+
+.delete-button:hover:before {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.delete-button:hover {
+  color: #fff;
+}
+/*# sourceMappingURL=main.css.map */

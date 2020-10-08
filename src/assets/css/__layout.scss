@@ -1,0 +1,377 @@
+.nav-wrapper {
+    display: flex;
+    padding: 3rem 0;
+
+    &__logo {
+        max-width: 30%;
+        flex: 0 0 30%;
+
+        & a {
+            font-family: $header-font;
+            font-size: 20px;
+            font-weight: 600;
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+
+    &__nav {
+        max-width: 70%;
+        flex: 0 0 70%;
+        width: 100%;
+        display: flex;
+
+        &-desktop {
+            width: 100%;
+            display: flex;
+            list-style-type: none;
+            justify-content: flex-end;
+
+            &_list {
+                text-decoration: none;
+                margin: 0 1rem;
+
+                & a {
+                    color: inherit;
+                    text-decoration: none;
+                    font-family: $header-font;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+.signup {
+
+    &-container {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4rem;
+        margin-bottom: 40px;
+    }
+
+    &-form {
+        max-width: 500px;
+        margin: 1.5rem auto;
+        position: relative;
+        border-radius: 3px;
+        padding: 25px 60px;
+        box-shadow: rgba(0,0,0,0.1) 0 0 10px;
+        transition: .5s all ease-in-out;
+        transform: translateZ(0);
+        will-change: transfrom, transition;
+
+        &:hover {
+            box-shadow: rgba(0,0,0,0.2) 0 0 10px;
+        }
+
+        &__img {
+            margin: 2rem auto;
+
+            & a {
+                color: inherit;
+                text-decoration: none;
+
+                & h2 {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+
+        &__header {
+            margin-bottom: 2rem;
+
+            & h2 {
+                font-weight: 600;
+                padding-bottom: 1rem;
+            }
+
+            & p {
+                font-size: 13px;
+
+                & a {
+                    color: $complimentary-color__hex;
+                    font-family: $header-font;
+                    text-decoration: none;
+                    line-height: 1.6;
+                }
+            }
+        }
+
+        & form {
+            margin-bottom: 2rem;
+        }
+
+        &__link {
+            margin-bottom: 2rem;
+
+            & p {
+                position: relative;
+
+                & a {
+                    color: $complimentary-color__hex;
+                    font-family: $header-font;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+.dashboard-padding {
+    padding: 3rem 4rem;
+}
+
+.side-menu {
+    display: flex;
+    max-width: 25%;
+    width: 100%;
+    flex: 0 0 25%;
+    position: relative;
+
+    &__nav {
+        max-width: 20%;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        padding: 0 .5rem;
+
+        &--list {
+
+            & ul {
+                list-style-type: none;
+
+                & li {
+                    margin-top: 1.2rem;
+
+                    &:last-child {
+                        margin: 3rem 0 2rem 0;
+                    }
+
+                    & a {
+                        color: inherit;
+                        text-decoration: none;
+                        font-family: $header-font;
+                        transform: translate3d(0, 0 , 0);
+                        will-change: transform;
+                        transition: all .3s ease-in-out;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+
+                        & svg, & img {
+                            margin-right: .5rem;
+                        }
+
+                        &:hover {
+                            color: $complimentary-color__hex;
+                        }
+                    }
+                }
+            }
+        }
+
+        &--help {
+            position: absolute;
+            top: 80%;
+            display: block;
+            width: 100%;
+
+            & ul {
+                list-style-type: none;
+
+                & a {
+                    color: inherit;
+                    text-decoration: none;
+                    font-family: $header-font;
+                    transform: translate3d(0, 0 , 0);
+                    will-change: transform;
+                    transition: all .3s ease-in-out;
+                    position: relative;
+                    font-size: 14px;
+                    display: inline-flex;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    & svg {
+                        margin-right: .3rem;
+                        position: relative;
+                        transition: all .3s ease-in-out;
+                        transform: translateZ(0);
+                        will-change: transform;
+                    }
+
+                    &:hover #svg-help {
+                        fill: $accent-color__hex;
+                    }
+
+                    &:hover .help-tool {
+                        opacity: 1;
+                        visibility: visible;
+                        transform: translate3d(0, -32px, 0);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.body-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.account--card {
+    box-shadow: 0 1px 4px 0 rgba(21,27,38,.08);
+    padding: 1.2rem 1.5rem;
+    max-width: 850px;
+    width: 100%;
+    background-color: #f6f8f9;
+    border-radius: 5px;
+
+    &__panel {
+        position: relative;
+        padding: 1rem;
+
+        &-header {
+            margin-bottom: 1.4rem;
+
+            & h2 {
+                font-size: 1.4rem;
+            }
+        }
+
+        &-sub {
+            margin: 2rem 0 1.2rem 0;
+        
+            & p {
+                font-family: $header-font;
+                font-size: 14px;
+                color: #6f7782;
+                margin-bottom: 1rem;
+            }
+
+            &:not(:first-child) {
+                margin-top: 10%;
+            }
+        }
+
+        &-content {
+            border-top: 2px solid rgba($color: #6f7782, $alpha: .2);
+            position: relative;
+            padding: 1rem 0;
+            border-bottom: 2px solid rgba($color: #6f7782, $alpha: .2);
+
+            & span {
+                display: block;
+
+                &:nth-child(1) {
+                    font-family: $header-font;
+                    font-size: .9rem;
+                }
+
+                &:last-child {
+                    font-family: $primary-font;
+                }
+
+                &.e--block {
+                    display: flex;
+                    align-items: center;
+                    
+                    & svg {
+                        margin-left: .5rem;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.border-none {
+    border-top: none;
+}
+
+.error {
+    color: #cb2431;
+
+    &-border {
+        border-top: 2px solid #cb2431;
+        border-bottom: 2px solid #cb2431;
+    }
+
+    & p {
+        color: #cb2431;
+    }
+}
+
+.help-tool {
+    box-shadow: 0 1px 4px 0 rgba(21,27,38,.08);
+    padding: .8rem 1rem;
+    transform: translate3d(0, 15px, 0);
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    margin-bottom: 20px;
+    will-change: opacity, transform;
+    visibility: hidden;
+    position: absolute;
+    display: block;
+    width: 400%;
+    background-color: #f6f8f9;
+    z-index: 1;
+
+    & p {
+        font-size: 14px;
+    }
+}
+
+.account--table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 32px;
+
+    &>thead>tr>th {
+        font-weight: 400;
+        font-size: .8rem;
+        white-space: nowrap;
+    }
+}
+
+.fixed--table {
+    table-layout: fixed;
+
+    &>thead>tr>th {
+        color: #7b8994;
+        font-size: .8rem;
+        font-family: $header-font;
+        padding: .75rem .5rem .75rem 0;
+        border-bottom: 1px solid #dce4ec;
+        vertical-align: bottom;
+        text-align: left;
+    }
+
+    &>tbody tr {
+        border-bottom: 1px solid #dce4ec;
+
+        &>td {
+            padding: 1rem 1rem 1rem 0;
+
+            & span {
+                font-size: .9rem;
+            }
+        }
+    }
+}
+
+.text-owner {
+    color: #089d6f;
+}
