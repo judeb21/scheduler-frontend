@@ -11,7 +11,7 @@
                     <h2>Try Scheduler for free</h2>
                     <p>By signing up, I agree to the Scheduler <a href="#">Privacy Policy</a> <br> and <a href="#">Terms of Service</a>.</p>
                 </div>
-                <form action="" method="post">
+                <form action="">
                     <div class="form-grouped">
                         <div class="form-col-half">
                             <label for="first_name">First Name</label>
@@ -35,7 +35,8 @@
                         </div>
                     </div>
                     <div class="form-grouped">
-                        <button class="button">Register</button>
+                        <!-- <button class="button" @click="submit">Register</button> -->
+                        <a href="/dashboard" class="button">Register</a>
                     </div>
                 </form>
                 <div class="signup-form__link">
@@ -54,6 +55,12 @@ export default {
 
   mounted() {
     document.querySelector('#local').innerText = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  },
+
+  methods: {
+      submit() {
+        this.$router.push('/dashboard');
+      }
   }
 }
 </script>

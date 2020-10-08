@@ -15,7 +15,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="social.html">
+                        <a href="/social">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="20px" height="20px">
                                 <g>
                                     <path d="M333.287,371.832c-4.143,0-7.5,3.357-7.5,7.5v13.796c0,3.521-2.209,6.727-5.498,7.979c-3.871,1.474-5.814,5.807-4.34,9.678   c1.139,2.993,3.987,4.833,7.01,4.833c0.887,0,1.79-0.158,2.668-0.493c9.067-3.452,15.16-12.292,15.16-21.996v-13.796   C340.787,375.189,337.429,371.832,333.287,371.832z"/>
