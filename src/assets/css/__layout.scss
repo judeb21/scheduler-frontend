@@ -372,8 +372,13 @@
     }
 }
 
-.text-owner {
-    color: #089d6f;
+.text {
+    &-owner {
+        color: #089d6f;
+    }
+    &-danger {
+        color: #f84849;
+    }
 }
 
 .nf-width {

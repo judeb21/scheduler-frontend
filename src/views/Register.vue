@@ -40,7 +40,7 @@
                     </div>
                 </form>
                 <div class="signup-form__link">
-                    <p>Already have an account <a href="#">Login</a> </p>
+                    <p>Already have an account <a href="/login">Login</a> </p>
                 </div>
             </div>
         </div>

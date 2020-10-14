@@ -3,8 +3,18 @@ import App from './App.vue'
 import './registerServiceWorker'
 import router from './router'
 import store from './store'
+import Axios from 'axios'
+import axios from 'axios'
+
+Vue.prototype.$http = Axios;
+const token = localStorage.getItem('token')
+if (token) {
+  Vue.prototype.$http.defaults.headers.common['Authorization'] = token
+}
 
 Vue.config.productionTip = false
+
+axios.defaults.baseURL = 'http://127.0.0.1:8000/api/auth/'
 
 new Vue({
   router,

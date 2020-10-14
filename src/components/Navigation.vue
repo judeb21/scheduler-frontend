@@ -11,7 +11,7 @@
                             <a href="">Pricing</a>
                         </li>
                         <li class="nav-wrapper__nav-desktop_list">
-                            <a href="/dashboard">Sign In</a>
+                            <a href="/login">Sign In</a>
                         </li>
                         <li class="nav-wrapper__nav-desktop_list">
                             <a href="/register" class="nav_button">Get Started</a>

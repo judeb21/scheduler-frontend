@@ -70,6 +70,11 @@
     }
 }
 
+button:disabled {
+    opacity: .6;
+    cursor: no-drop;
+}
+
 .button {
     position: relative;
     background-color: $complimentary-color__rgb;
